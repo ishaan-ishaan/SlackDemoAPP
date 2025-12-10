@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "Grey Box – GAS API",
+    "_postman_id": "grey-box-api-collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Default",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}"
+      }
+    },
+    {
+      "name": "JSON mode",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}?mode=json"
+      }
+    },
+    {
+      "name": "Add numbers",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}?a=5&b=10"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "ES5",
+    "module": "None",
+    "types": ["google-apps-script"],
+    "noEmitOnError": false
+  },
+  "include": ["src/gas/**/*.ts"],
+  "exclude": ["node_modules", "dist", "build"]
+}
