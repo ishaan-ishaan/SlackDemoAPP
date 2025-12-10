@@ -1,0 +1,33 @@
+/*
+  Here is a short description for each of the six admin-panel buttons and what they do.
+
+  Sync People Directory - function: syncPeopleDirectory()
+    1.Pulls all users from Slack (users.list) and rebuilds the People Directory sheet.
+
+    2.Updates MemberID, Email, Name, Status, LastActivity (and Presence if you keep the presence logic).
+
+
+  Regenerate Usergroups Sheet - function: regenerateUsergroups()
+    1.Reads all Slack usergroups and their current members.
+
+    2.Rebuilds the Slack Usersgroup sheet with GroupName, Handle, Description, and Members (user IDs).
+
+
+  Sync All Usergroups - function: runSyncUsergroups()
+    1.Reads the Slack Usersgroup sheet as the source of truth for group definitions.
+
+    2.For each row, updates the matching Slack usergroup's name/handle/description and member list to match the sheet.
+
+
+  Notion json people directory - function: testSyncNotionJson()
+    1.Loads Notion JSON (exampleJSON file), builds a Notion-based People Directory, and compares Notion teams to Slack
+      usergroups.
+
+    2.Writes a merged People Directory (Slack + Notion) and a Notion-Slack Audit sheet showing missing users/groups.
+
+
+  Deactivated User Sheet - function: makeDeactivatedUsersSheet()
+    1.Pulls all users from Slack and filters to only deleted/inactive accounts.
+
+    2.Rebuilds the Deactivated Users sheet with MemberID, Email, Name, Deleted flag, and LastActivity.
+*/
