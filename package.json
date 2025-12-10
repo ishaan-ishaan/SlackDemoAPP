@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "node ./scripts/build.mjs"
+    
   },
   "devDependencies": {
     "@types/google-apps-script": "^2.0.8",

@@ -2,6 +2,8 @@ import { SPREADSHEET_ID, DEFAULT_SHEET_NAME } from '../shared/sheetConfig';
 import { syncUsergroups } from '../sync/syncUsergroups';
 import { regenerateSheetFromSlack } from '../sync/regenerateUsergroups';
 
+declare const Logger: any;
+
 export function runSyncUsergroups() {
   return syncUsergroups(SPREADSHEET_ID, DEFAULT_SHEET_NAME);
 }
